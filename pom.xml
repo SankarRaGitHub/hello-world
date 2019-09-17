@@ -9,15 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>Maven Project</name>
   <description>Sample Maven project with a working, deployable site.</description>
-  <url>http://www.example.com</url>
-
-         <distributionManagement>
-   <snapshotRepository>
-      <id>nexus</id>
-      <url>http://13.127.102.88:8081/nexus/content/repositories/snapshots/</url>
-   </snapshotRepository>
-</distributionManagement>
-         
+         <url>http://www.example.com</url>       
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
@@ -202,8 +194,16 @@
         <version>1.8.5</version>
         <scope>test</scope>
       </dependency>
+                     <distributionManagement>
+   <snapshotRepository>
+      <id>nexus</id>
+      <url>http://13.127.102.88:8081/nexus/content/repositories/snapshots/</url>
+   </snapshotRepository>
+</distributionManagement>
     </dependencies>
+           
   </dependencyManagement>
+         
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
