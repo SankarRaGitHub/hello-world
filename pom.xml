@@ -194,16 +194,15 @@
         <version>1.8.5</version>
         <scope>test</scope>
       </dependency>
-                     <distributionManagement>
-   <snapshotRepository>
-      <id>nexus</id>
-      <url>http://13.127.102.88:8081/nexus/content/repositories/snapshots/</url>
-   </snapshotRepository>
-</distributionManagement>
+
     </dependencies>
            
   </dependencyManagement>
-         
+    <distributionManagement>
+   <snapshotRepository>
+      <url>http://13.232.108.179:8081/nexus/content/repositories/snapshots/</url>
+   </snapshotRepository>
+</distributionManagement>      
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
